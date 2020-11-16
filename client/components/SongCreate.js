@@ -12,6 +12,8 @@ class SongCreate extends Component {
   }
   onSubmit(event) {
     event.preventDefault();
+    // this is how we call the mutation. using this.props.mutate
+    // then we add variable
     this.props
       .mutate({
         variables: {

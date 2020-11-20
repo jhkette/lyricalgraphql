@@ -23,6 +23,8 @@ class SongCreate extends Component {
         // the reason we do it this way is because this query is not associated
         // with this component. On songlist page we do it in a different way - we don't have
         // access to this.props.data.refetch()
+        // THIS DOES MAKE ANOTHER NETWORK REQUEST THOUGH
+        // - could use mb data caching -- see index page
         refetchQueries: [{ query }],
         //   if we did need to add variables it would
         // be [{query: query, variables: this.state.title}]
